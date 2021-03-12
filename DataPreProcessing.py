@@ -29,7 +29,6 @@ def CountWord(df):
 
 #features - CountQuestionMarks
 def CountQuestionMarks(df):
-    print(df['text'])
     df['no_of_question_marks'] = df['text'].map(lambda x:x.count('?'))
     return df
 
