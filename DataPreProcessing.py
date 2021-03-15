@@ -9,17 +9,28 @@ import textstat as ts
 import json
 import ast
 
-#go to the desired directory
-# os.chdir("Dataset")
-
 #utility function to save the file in csv
 def savetocsv(df,path):
     df.to_csv(path)
 
+# Check if string contains non-English characters
+def isEnglish(s):
+    try:
+        s.encode(encoding='utf-8').decode('ascii')
+    except UnicodeDecodeError:
+        return False
+    else:
+        return True
+
 #utility function to get the file in form of a pandas dataframe
 def getframe(path):
     df=pd.read_csv(path, sep = ',', nrows = 20000, encoding = "ISO-8859-1")
+    # Remove rows with non-English text
+    df = df[df['text'].map(isEnglish) == True]
+    # Drop duplicate rows
     df=df.drop_duplicates()
+    # Drop the rows even with single NaN or single missing values
+    df.dropna()
     return df
 
 #features - countword
@@ -88,12 +99,13 @@ def addfeatures(df):
     print('CountUrls finished')
     return df
 
-#utility function to create files containing linguistic features
-def createfiles(path):
-    df=getframe(path)
-    df=addfeatures(df)
-    x=path.find('.')
+#utility function to create file containing linguistic features
+def createfile(path):
+    df = getframe(path)
+    df = addfeatures(df)
+    x = path.find('.')
     df.to_csv('./Dataset/additionalFeatureData.csv')
     return df
 
-createfiles("./Dataset/covid_vaccine.csv")
+if __name__ == "main":
+    createfile("./Dataset/covid_vaccine.csv")
