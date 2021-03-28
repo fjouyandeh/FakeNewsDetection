@@ -104,8 +104,8 @@ def createfile(path):
     df = getframe(path)
     df = addfeatures(df)
     x = path.find('.')
-    df.to_csv('./Dataset/additionalFeatureData.csv')
+    df.to_csv('../Dataset/TrainFinalDS_AdditionalFeatures1.csv')
     return df
 
-if __name__ == "main":
-    createfile("./Dataset/covid_vaccine.csv")
+
+createfile("../Dataset/TrainFinalDS_AdditionalFeatures.csv")
