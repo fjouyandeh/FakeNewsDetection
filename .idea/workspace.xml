@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84ab10b2-cbe5-47aa-9ca7-ecbd24119a8e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classifiers/ModelTraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classifiers/ModelTraining.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataProcessing/DataPreProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataProcessing/DataPreProcessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/TestFinalDS_AdditionalFeatures.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/TestFinalDS_AdditionalFeatures.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/TrainFinalDS_AdditionalFeatures.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/TrainFinalDS_AdditionalFeatures.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classifiers/AI_Text_Classfiers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1142">
+            <state relative-caret-position="2261">
               <caret line="150" column="75" selection-start-line="130" selection-end-line="150" selection-end-column="75" />
               <folding>
                 <element signature="e#51#70#0" expanded="true" />
@@ -30,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataProcessing/DataPreProcessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="106" column="64" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="64" />
+            <state relative-caret-position="391">
+              <caret line="31" column="65" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -39,10 +37,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classifiers/ModelTraining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+            <state relative-caret-position="68">
+              <caret line="124" column="22" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#0#17#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://E:/pcap-project/project.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
+            <state relative-caret-position="3944">
               <caret line="268" column="49" selection-start-line="245" selection-end-line="268" selection-end-column="49" />
               <folding>
                 <element signature="e#17#30#0" expanded="true" />
@@ -103,6 +101,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,11 +124,15 @@
               <item name="MainProject1" type="462c0819:PsiDirectoryNode" />
               <item name="Dataset" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MainProject1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MainProject1" type="462c0819:PsiDirectoryNode" />
+              <item name="Result" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,12 +292,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987593" visible="true" weight="0.16414523" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987593" visible="true" weight="0.16641453" />
       <window_info id="Structure" order="1" sideWeight="0.5012407" side_tool="true" weight="0.19742814" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.40522876" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.42647058" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,19 +331,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/pcap-project/project.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="268" column="49" selection-start-line="245" selection-end-line="268" selection-end-column="49" />
-          <folding>
-            <element signature="e#17#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classifiers/AI_Text_Classfiers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1142">
+        <state relative-caret-position="2261">
           <caret line="150" column="75" selection-start-line="130" selection-end-line="150" selection-end-column="75" />
           <folding>
             <element signature="e#51#70#0" expanded="true" />
@@ -348,19 +341,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataProcessing/DataPreProcessing.py">
+    <entry file="file://E:/pcap-project/project.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="106" column="64" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="64" />
+        <state relative-caret-position="3944">
+          <caret line="268" column="49" selection-start-line="245" selection-end-line="268" selection-end-column="49" />
+          <folding>
+            <element signature="e#17#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DataProcessing/DataPreProcessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="31" column="65" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/FinalLabel.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Classifiers/ModelTraining.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+        <state relative-caret-position="68">
+          <caret line="124" column="22" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
