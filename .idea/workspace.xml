@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84ab10b2-cbe5-47aa-9ca7-ecbd24119a8e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classifiers/ModelTraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classifiers/ModelTraining.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataProcessing/DataPreProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataProcessing/DataPreProcessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/TestFinalDS_AdditionalFeatures.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/TestFinalDS_AdditionalFeatures.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/TrainFinalDS_AdditionalFeatures.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/TrainFinalDS_AdditionalFeatures.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,36 +16,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataPreProcessing.py">
+        <entry file="file://$PROJECT_DIR$/Classifiers/AI_Text_Classfiers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="73" />
+            <state relative-caret-position="1142">
+              <caret line="150" column="75" selection-start-line="130" selection-end-line="150" selection-end-column="75" />
               <folding>
-                <element signature="e#24#33#0" expanded="true" />
+                <element signature="e#51#70#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tokenization.py">
+        <entry file="file://$PROJECT_DIR$/DataProcessing/DataPreProcessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="156">
+              <caret line="106" column="64" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DataAugmentation.py">
+        <entry file="file://$PROJECT_DIR$/Classifiers/ModelTraining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+            <state relative-caret-position="180">
+              <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/pcap-project/project.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="268" column="49" selection-start-line="245" selection-end-line="268" selection-end-column="49" />
+              <folding>
+                <element signature="e#17#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,6 +72,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>statemen</find>
+      <find>sentiment</find>
+      <find>build_tfidf</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -72,11 +86,14 @@
         <option value="$PROJECT_DIR$/Tokenization.py" />
         <option value="$PROJECT_DIR$/DataPreProcessing.py" />
         <option value="$PROJECT_DIR$/DataAugmentation.py" />
+        <option value="$PROJECT_DIR$/Classifiers/AI_Text_Classfiers.py" />
+        <option value="E:/pcap-project/project.py" />
+        <option value="$PROJECT_DIR$/DataProcessing/DataPreProcessing.py" />
+        <option value="$PROJECT_DIR$/Classifiers/ModelTraining.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="683" />
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -86,7 +103,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,17 +113,28 @@
             <path>
               <item name="MainProject1" type="b2602c69:ProjectViewProjectNode" />
               <item name="MainProject1" type="462c0819:PsiDirectoryNode" />
+              <item name="Classifiers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MainProject1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MainProject1" type="462c0819:PsiDirectoryNode" />
+              <item name="DataProcessing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MainProject1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MainProject1" type="462c0819:PsiDirectoryNode" />
               <item name="Dataset" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/pcap-project/project.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -129,7 +156,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.DataAugmentation">
+  <component name="RunManager" selected="Python.ModelTraining">
+    <configuration name="AI_Text_Classfiers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MainProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classifiers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classifiers/AI_Text_Classfiers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="DataAugmentation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MainProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,6 +191,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataAugmentation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DataPreProcessing (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MainProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataProcessing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataProcessing/DataPreProcessing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,7 +241,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Tokenization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ModelTraining" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MainProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,11 +249,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classifiers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tokenization.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classifiers/ModelTraining.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,9 +264,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.DataAugmentation" />
-        <item itemvalue="Python.Tokenization" />
+        <item itemvalue="Python.ModelTraining" />
+        <item itemvalue="Python.DataPreProcessing (1)" />
         <item itemvalue="Python.DataPreProcessing" />
+        <item itemvalue="Python.AI_Text_Classfiers" />
+        <item itemvalue="Python.DataAugmentation" />
       </list>
     </recent_temporary>
   </component>
@@ -216,13 +287,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987593" visible="true" weight="0.19742814" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987593" visible="true" weight="0.16414523" />
       <window_info id="Structure" order="1" sideWeight="0.5012407" side_tool="true" weight="0.19742814" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.34150326" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.40522876" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -234,7 +306,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Graphics" order="3" weight="0.32980332" />
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
   </component>
@@ -243,32 +315,52 @@
     <entry file="file://$PROJECT_DIR$/Dataset/TrainDataSet.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tokenization.py">
+    <entry file="file://$PROJECT_DIR$/DataPreProcessing.py" />
+    <entry file="file://$PROJECT_DIR$/Tokenization.py" />
+    <entry file="file://$PROJECT_DIR$/DataAugmentation.py" />
+    <entry file="file://$PROJECT_DIR$/DataProcessing/DataAugmentation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="119">
+          <caret line="7" column="59" lean-forward="true" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataPreProcessing.py">
+    <entry file="file://E:/pcap-project/project.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="73" />
+        <state relative-caret-position="169">
+          <caret line="268" column="49" selection-start-line="245" selection-end-line="268" selection-end-column="49" />
           <folding>
-            <element signature="e#24#33#0" expanded="true" />
+            <element signature="e#17#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataAugmentation.py">
+    <entry file="file://$PROJECT_DIR$/Classifiers/AI_Text_Classfiers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        <state relative-caret-position="1142">
+          <caret line="150" column="75" selection-start-line="130" selection-end-line="150" selection-end-column="75" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#51#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataProcessing/DataPreProcessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="106" column="64" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classifiers/ModelTraining.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
