@@ -12,7 +12,7 @@ df = pd.read_csv("..\Dataset\AugmentedTrainDataSet.csv")
 sns.countplot(df['Final Label'])
 plt.xlabel('Label')
 plt.title('Number of REAL and FAKE Tweets')
-plt.show()
+# plt.show()
 
 from sklearn.preprocessing import LabelEncoder
 #initializing an object of class LabelEncoder
@@ -71,63 +71,37 @@ for k in [3,5,7,9]:
     print("KNN Accuracy Rate -> ",accuracy_score(y_pred, y_test) * 100)
 
 #===========================================================
-# SVM Classifier
-SVM = svm.SVC(C = 2.0, kernel = 'linear', degree = 4, gamma = 'auto')
-
-SVM.fit(X_train, y_train.values.ravel())
-
-# predict the labels on validation dataset
-predictions_SVM = SVM.predict(X_test)
-print('\nSVM Classifier:\n')
-print(classification_report(y_test, predictions_SVM))
-
-# Use accuracy_score function to get the accuracy
-print("SVM Accuracy Rate -> ",accuracy_score(predictions_SVM, y_test) * 100)
-
-#===========================================================
-# Logistic Regression Classifier
+from sklearn.neural_network import MLPClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.gaussian_process import GaussianProcessClassifier
+from sklearn.gaussian_process.kernels import RBF
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 from sklearn.linear_model import LogisticRegression
-lr = LogisticRegression()
-lr.fit(X_train, y_train.values.ravel())
-y_pred = lr.predict(X_test)
-print('\nLogistic Regression Classifier:\n')
-print(classification_report(y_test, y_pred))
-print("Logistic Regression Accuracy Rate -> ", lr.score(X_test, y_test)  * 100)
+classifiers = [
+    LogisticRegression(),
+    # SVC(kernel="linear", C=0.025),
+    SVC(gamma=2, C=1),
+    # GaussianProcessClassifier(1.0 * RBF(1.0)),
+    # DecisionTreeClassifier(max_depth=5),
+    RandomForestClassifier(max_depth=5, n_estimators=10, max_features=1),
+    # MLPClassifier(alpha=1, max_iter=1000),
+    AdaBoostClassifier(),
+    # QuadraticDiscriminantAnalysis()
+]
 
-#===========================================================
-# Random Forest Classifier
-#Import Random Forest Model
-from sklearn.ensemble import RandomForestClassifier
+for classifier in classifiers:
+    clf = classifier
+    clf.fit(X_train, y_train.values.ravel())
+    predictions = clf.predict(X_test)
+    print(classification_report(y_test, predictions))
+    print(classifier," Rate -> ", accuracy_score(predictions, y_test) * 100)
 
-#Create a Gaussian Classifier
-clf=RandomForestClassifier(n_estimators=100)
 
-#Train the model using the training sets y_pred=clf.predict(X_test)
-clf.fit(X_train,y_train)
 
-y_pred=clf.predict(X_test)
-print('\nRandom Forest Classifier:\n')
-print(classification_report(y_test, y_pred))
 
-#Import scikit-learn metrics module for accuracy calculation
-from sklearn import metrics
-# Model Accuracy, how often is the classifier correct?
-print("Random Forest Accuracy ->", metrics.accuracy_score(y_test, y_pred)  * 100)
-
-#============================================================
-from sklearn.tree import DecisionTreeClassifier # Import Decision Tree Classifier
-# Create Decision Tree classifer object
-clf = DecisionTreeClassifier()
-
-# Train Decision Tree Classifer
-clf = clf.fit(X_train,y_train)
-
-#Predict the response for test dataset
-y_pred = clf.predict(X_test)
-print('\nDecision Tree Classifier:\n')
-print(classification_report(y_test, y_pred))
-# Model Accuracy, how often is the classifier correct?
-print("Decision Tree Accuracy ->", metrics.accuracy_score(y_test, y_pred ) * 100)
 #============================================================
 # Getting the final result
 targetDf = pd.read_csv("..\Dataset\TestFinalDS_AdditionalFeatures.csv")
@@ -136,7 +110,11 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 tfidf_vectorizer = TfidfVectorizer()
 X_tfidf = tfidf_vectorizer.fit_transform(df['token_texts']).toarray()
 X_target = np.hstack((X[selectedColumns].values, X_tfidf))
-finalPredict = SVM.predict((X_target))
+
+clf = AdaBoostClassifier()
+clf.fit(X_train, y_train.values.ravel())
+predictions = clf.predict(X_test)
+finalPredict = clf.predict(X_target)
 print(finalPredict.shape)
 
 labelColumn = []
@@ -145,5 +123,3 @@ labelColumn[:] = ['REAL' if x == 1 else 'FAKE' for x in finalPredict]
 import pandas
 df = pandas.DataFrame(data={"Final Labels": labelColumn})
 df.to_csv("..\Result\FinalLabel.csv", sep=',',index=False)
-
-
