@@ -7,12 +7,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv("..\Dataset\TrainFinalDS_AdditionalFeatures.csv")
+df = pd.read_csv("..\Dataset\AugmentedTrainDataSet.csv")
 
 sns.countplot(df['Final Label'])
 plt.xlabel('Label')
 plt.title('Number of REAL and FAKE Tweets')
-# plt.show()
+plt.show()
 
 from sklearn.preprocessing import LabelEncoder
 #initializing an object of class LabelEncoder
@@ -53,21 +53,24 @@ g = sns.heatmap(PlotData[top_corr_features].corr(),annot = True, cmap = "RdYlGn"
 
 #===========================================================
 # Split data
-X_train, X_test, y_train, y_test = train_test_split(X_all_data_tfidf, y, test_size = 0.20, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X_all_data_tfidf, y, test_size = 0.30, random_state = 0)
 
 #===========================================================
 # KNN Classifier
 print('\nKNN Classifier:\n')
 from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors=5)
-classifier.fit(X_train, y_train)
-y_pred = classifier.predict(X_test)
-from sklearn.metrics import classification_report, confusion_matrix
-# print(confusion_matrix(y_test, y_pred))
-print('\nKNN Classifier:\n')
-print(classification_report(y_test, y_pred))
+for k in [3,5,7,9]:
+    classifier = KNeighborsClassifier(n_neighbors=k)
+    classifier.fit(X_train, y_train)
+    y_pred = classifier.predict(X_test)
+    from sklearn.metrics import classification_report, confusion_matrix
+    print(confusion_matrix(y_test, y_pred))
+    print('\nKNN Classifier: K = ', k)
+    print(classification_report(y_test, y_pred))
 
-print("KNN Accuracy Rate -> ",accuracy_score(y_pred, y_test) * 100)
+    print("KNN Accuracy Rate -> ",accuracy_score(y_pred, y_test) * 100)
+
+exit()
 #===========================================================
 # SVM Classifier
 SVM = svm.SVC(C = 2.0, kernel = 'linear', degree = 4, gamma = 'auto')
