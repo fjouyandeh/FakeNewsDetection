@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84ab10b2-cbe5-47aa-9ca7-ecbd24119a8e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classifiers/ModelTraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classifiers/ModelTraining.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataProcessing/DataAugmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataProcessing/DataAugmentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/AugmentedTrainDataSet.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/AugmentedTrainDataSet.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result/FinalLabel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Result/FinalLabel.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classifiers/ModelTraining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="61" column="18" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="18" />
+            <state relative-caret-position="197">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -317,6 +313,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987593" visible="true" weight="0.1732224" />
       <window_info id="Structure" order="1" sideWeight="0.5012407" side_tool="true" weight="0.19742814" />
@@ -398,8 +395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Classifiers/ModelTraining.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="61" column="18" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="18" />
+        <state relative-caret-position="197">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>

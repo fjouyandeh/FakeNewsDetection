@@ -70,7 +70,6 @@ for k in [3,5,7,9]:
 
     print("KNN Accuracy Rate -> ",accuracy_score(y_pred, y_test) * 100)
 
-exit()
 #===========================================================
 # SVM Classifier
 SVM = svm.SVC(C = 2.0, kernel = 'linear', degree = 4, gamma = 'auto')
